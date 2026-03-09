@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuestGen AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>QuestGen AI 📚</h1>
+<p>Smart Multi-Subject Question Generator</p>
+</header>
+
+<div class="container">
+
+<div class="input-card">
+
+<h2>Generate Questions</h2>
+
+<label>Select Subject</label>
+<select id="subject">
+<option>Artificial Intelligence</option>
+<option>DBMS</option>
+<option>Operating Systems</option>
+<option>Computer Networks</option>
+<option>Mathematics</option>
+<option>Physics</option>
+<option>Chemistry</option>
+</select>
+
+<label>Enter Topic</label>
+<input type="text" id="topic" placeholder="Example: Intelligent Agents">
+
+<button onclick="generateQuestions()">Generate Questions</button>
+
+</div>
+
+</div>
+
+<div class="output">
+
+<h2>1 Mark Questions</h2>
+
+<table id="oneMark">
+<tr>
+<th>No</th>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</table>
+
+<h2>5 Mark Questions</h2>
+
+<table id="fiveMark">
+<tr>
+<th>No</th>
+<th>Question</th>
+<th>Answer</th>
+</tr>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
